@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami - Lesung Café</title>
+  <meta name="description" content="Profil dan filosofi Lesung Café - cita rasa lokal dan suasana yang menghangatkan.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo">Lesung<span>Cafe</span></a>
+    <div class="navbar-nav" id="navbar-nav">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="menu.html">Menu</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="artikel.html">Artikel</a>
+    </div>
+    <div class="navbar-extra">
+      <a href="tentang-en.html" id="translate-button" title="English Version"><i data-feather="globe"></i></a>
+      <a href="#" id="search"><i data-feather="search"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+
+  <!-- Tentang Section -->
+  <section class="about" style="padding-top: 8rem;">
+    <img src="https://i.imgur.com/EB1rYQ2.jpg" alt="Foto Lesung Café" style="width: 100%; max-height: 450px; object-fit: cover; border-radius: 10px; margin-bottom: 2rem;" />
+    <h2>Lesung Café</h2>
+    <h3 style="margin-bottom: 1.5rem; color: var(--primary);">Cita Rasa Lokal, Suasana yang Menghangatkan</h3>
+
+    <div class="about-paragraph" style="max-width: 800px; margin: auto; font-size: 1.1rem;">
+      <p>
+        Lesung Café adalah sebuah tempat makan yang bergerak di bidang kuliner, berlokasi di Kepanjen, Kabupaten Malang. Berdiri dengan semangat untuk menghadirkan makanan khas Indonesia dalam suasana yang nyaman dan otentik, Lesung Café menjadi tempat berkumpul yang ideal bagi masyarakat lokal maupun wisatawan mancanegara.
+      </p><br/>
+      <p>
+        Nama “Lesung” diambil dari alat tradisional penumbuk padi dalam budaya Jawa, yang melambangkan kerja keras, kebersamaan, dan warisan lokal. Filosofi tersebut kami bawa dalam setiap aspek café ini, dari penyajian makanan, suasana interior, hingga pelayanan ramah yang kami tawarkan.
+      </p><br/>
+      <p>
+        Kami percaya bahwa makanan bukan hanya soal rasa, tetapi juga cerita. Oleh karena itu, menu kami seperti Sego Sambel Lesung, Kopi Tubruk, dan berbagai pilihan lauk tradisional disajikan dengan penuh makna dan kenangan, yang terinspirasi dari dapur keluarga dan warisan resep turun-temurun.
+      </p><br/>
+      <p>
+        Melalui platform ini, kami berharap Lesung Café tidak hanya dikenal sebagai tempat makan, tetapi juga sebagai representasi kuliner lokal yang layak dikenal dunia. Kami mengundang Anda untuk datang, mencicipi, dan merasakan sendiri hangatnya suasana Lesung Café.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lesung Cafe. All rights reserved.</p>
+  </footer>
+
+  <!-- Feather Icons & Menu Script -->
+  <script>
+    feather.replace();
+    const hamburger = document.querySelector('#hamburger-menu');
+    const navMenu = document.querySelector('#navbar-nav');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
