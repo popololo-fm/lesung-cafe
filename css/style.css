@@ -574,6 +574,26 @@ body {
   content: none;
 }
 
+.menu-image-only img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .menu-image-only {
+    margin-top: 2rem !important;
+    padding: 0 1rem;
+  }
+  .menu-image-only img {
+    max-width: 100vw;
+    height: auto;
+    display: block;
+  }
+}
+
 /* Contact Section */
 .contact {
   padding: 5rem 10%;
