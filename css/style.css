@@ -772,3 +772,14 @@ footer {
     cursor: pointer;
   }
 }
+
+.menu-image-only {
+  padding: 1rem;
+}
+
+.menu-image-only img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
