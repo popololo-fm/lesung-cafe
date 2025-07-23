@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,62 +29,10 @@
     </div>
   </nav>
 
-  <!-- Menu Image Section -->
-  <section class="menu-image-only" style="margin-top: 80px; text-align: center;">
-    <img 
-      src="https://i.imgur.com/QqhLUe4.jpg" 
-      alt="Lesung Cafe Full Menu" 
-      title="Lesung Cafe Full Menu"
-      style="max-width: 100%; height: auto; border-radius: 10px;" 
-    />
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Lesung Cafe. All rights reserved.</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
-    feather.replace();
-    const hamburger = document.querySelector('#hamburger-menu');
-    const navMenu = document.querySelector('#navbar-nav');
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-  </script>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu - Lesung Café</title>
-  <meta name="description" content="Explore the traditional Indonesian food menu at Lesung Café, Kepanjen.">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <a href="index-en.html" class="navbar-logo">Lesung<span>Cafe</span></a>
-    <div class="navbar-nav" id="navbar-nav">
-      <a href="index-en.html">Home</a>
-      <a href="tentang-en.html">About</a>
-      <a href="menu-en.html">Menu</a>
-      <a href="kontak-en.html">Contact</a>
-      <a href="artikel-en.html">Article</a>
-    </div>
-    <div class="navbar-extra">
-      <a href="index.html" class="translate-btn">ID</a>
-      <a href="#" id="search"><i data-feather="search"></i></a>
-      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-    </div>
-  </nav>
+  <!-- Search Bar (hidden by default) -->
+  <div id="search-bar" style="display:none; position:fixed; top:80px; right:20px; background:#fff; padding:10px; border-radius:8px; z-index:9999; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+    <input type="text" placeholder="Search menu..." style="padding:6px; width:200px;" />
+  </div>
 
   <!-- Menu Image Section -->
   <section class="menu-image-only" style="margin-top: 80px; text-align: center;">
@@ -110,7 +57,11 @@
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
-  </script>
-</body>
->>>>>>> 1bf066550c5e9d53fcd2270ca96fe08722ebef96
-</html>
+
+    // Search icon click
+    const searchIcon = document.querySelector('#search');
+    const searchBar = document.getElementById('search-bar');
+    searchIcon.addEventListener('click', (e) => {
+      e.preventDefault();
+      searchBar.style.display = searchBar.style.display === 'none' ? 'block' : 'none';
+    });
