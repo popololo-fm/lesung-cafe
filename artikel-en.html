@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article - Sego Sambel Lesung</title>
+  <meta name="description" content="Discover the story and cultural heritage behind Lesung Café's signature dish: Sego Sambel Lesung.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index-en.html" class="navbar-logo">Lesung<span>Cafe</span></a>
+    <div class="navbar-nav" id="navbar-nav">
+      <a href="index-en.html">Home</a>
+      <a href="tentang-en.html">About</a>
+      <a href="menu-en.html">Menu</a>
+      <a href="kontak-en.html">Contact</a>
+      <a href="artikel-en.html">Article</a>
+    </div>
+   <div class="navbar-extra">
+  <a href="index.html" class="translate-btn">ID</a>
+  <a href="#" id="search"><i data-feather="search"></i></a>
+  <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+</div>
+
+  </nav>
+
+  <!-- Article Section -->
+  <section class="article" style="padding-top: 8rem; padding: 0 5% 4rem; background: #fff; color: #000;">
+    <div class="article-header" style="margin-bottom: 2rem;">
+      <img 
+        src="https://i.imgur.com/60ZqXNN.jpg" 
+        alt="Sego Sambel Lesung" 
+        title="Sego Sambel Lesung Menu"
+        style="width: 100%; max-height: 500px; object-fit: cover; border-radius: 0.75rem;" 
+      />
+    </div>
+    <h2>Sego Sambel Lesung</h2>
+    <p><strong>The Story Behind a Customer Favorite at Lesung Café</strong></p>
+    <p>Among many menu options at Lesung Café, Sego Sambel Lesung always stands out. Loved not just for its savory taste but for the emotional and cultural value it carries.</p>
+
+    <h3>What is "Lesung"?</h3>
+    <p>"Lesung" refers to a traditional Javanese wooden mortar used to pound rice. It symbolizes hard work, togetherness, and local heritage.</p>
+    <p>The café’s name and philosophy are inspired by this symbol. Located near rice fields, Lesung Café embraces rural warmth and authenticity. The dish is served on a mini stone mortar, not a regular plate, honoring its cultural roots and offering a unique dining experience.</p>
+
+    <h3>What is Sego Sambel Lesung?</h3>
+    <p>This hearty dish features:</p>
+    <ul>
+      <li>Steamed white rice</li>
+      <li>Freshly-ground sambal (chili paste)</li>
+      <li>Choice of side: spiced fried chicken, fried catfish, or fried/omelet egg</li>
+      <li>Fried tempeh and tofu</li>
+      <li>Fresh vegetables: cucumber and boiled cabbage</li>
+    </ul>
+
+    <p>Each element is crafted with care, and the sambal is made to order using a traditional stone mortar for bold and authentic flavors.</p>
+
+    <h3>A Taste of Home</h3>
+    <p>The owner adapted the recipe from their mother’s kitchen, making sambal the traditional way: hand-pounded with love and patience.</p>
+    <blockquote>“The sambal is special because it’s made with hands and heart,” said the owner.</blockquote>
+    <p>That’s why this dish evokes warmth and nostalgia for many visitors—it feels just like home.</p>
+
+    <p><strong>Sego Sambel Lesung is not just a dish—it’s a cultural representation, a family memory, and a celebration of local flavors.</strong></p>
+
+    <p><em>Next time you visit Lesung Café, don’t miss Sego Sambel Lesung and discover the story in every bite.</em></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lesung Cafe. All rights reserved.</p>
+  </footer>
+
+  <!-- Feather Icons & Toggle Menu -->
+  <script>
+    feather.replace();
+    document.querySelector('#hamburger-menu').addEventListener('click', () => {
+      document.querySelector('#navbar-nav').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

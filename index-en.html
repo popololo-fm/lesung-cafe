@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Lesung Café</title>
+  <meta name="description" content="Lesung Café - Local flavors in a warm and cozy atmosphere.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Tambahan untuk bantu debug -->
+  <style>
+    body {
+      background-color: #f5f5f5; /* Tambahkan latar terang supaya bisa lihat kontennya */
+      color: #000; /* Pastikan teks terlihat */
+      font-family: 'Ubuntu', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index-en.html" class="navbar-logo">Lesung<span>Cafe</span></a>
+    <div class="navbar-nav" id="navbar-nav">
+      <a href="index-en.html">Home</a>
+      <a href="tentang-en.html">About</a>
+      <a href="menu-en.html">Menu</a>
+      <a href="kontak-en.html">Contact</a>
+      <a href="artikel-en.html">Article</a>
+    </div>
+    <div class="navbar-extra">
+  <a href="index.html" class="translate-btn">ID</a>
+  <a href="#" id="search"><i data-feather="search"></i></a>
+  <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+</div>
+
+  </nav>
+
+  <!-- Hero with CTA Button -->
+  <section class="hero">
+    <div class="content">
+      <h1>Welcome to Lesung Café</h1>
+      <p>Experience the delicious taste of the Indonesian cuisine in a warm and cozy atmosphere.</p>
+      <a href="menu-en.html" class="cta">See Menu</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lesung Cafe. All rights reserved.</p>
+  </footer>
+
+  <!-- Feather Icons & Menu Script -->
+  <script>feather.replace();</script>
+  <script>
+    const hamburger = document.querySelector('#hamburger-menu');
+    const navMenu = document.querySelector('#navbar-nav');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- tentang-en.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Lesung Café</title>
+  <meta name="description" content="Learn more about Lesung Café - local taste with cultural warmth.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index-en.html" class="navbar-logo">Lesung<span>Cafe</span></a>
+    <div class="navbar-nav" id="navbar-nav">
+      <a href="index-en.html">Home</a>
+      <a href="tentang-en.html">About</a>
+      <a href="menu-en.html">Menu</a>
+      <a href="kontak-en.html">Contact</a>
+      <a href="artikel-en.html">Article</a>
+    </div>
+    <div class="navbar-extra">
+  <a href="index.html" class="translate-btn">ID</a>
+  <a href="#" id="search"><i data-feather="search"></i></a>
+  <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+</div>
+
+  </nav>
+
+  <section class="about" style="padding-top: 8rem;">
+    <img src="https://i.imgur.com/EB1rYQ2.jpg" alt="Lesung Café Photo" style="width: 100%; max-height: 450px; object-fit: cover; border-radius: 10px; margin-bottom: 2rem;" />
+    <h2>Lesung Café</h2>
+    <h3 style="margin-bottom: 1.5rem; color: var(--primary);">Local Taste, Heartwarming Atmosphere</h3>
+    <p style="max-width: 800px; margin: auto; font-size: 1.1rem;">
+      Lesung Café is a culinary business based in Kepanjen, Malang. We serve traditional Indonesian food in a cozy, authentic setting that invites both locals and international visitors to gather.
+    </p>
+    <br />
+    <p style="max-width: 800px; margin: auto; font-size: 1.1rem;">
+      The name "Lesung" comes from a traditional rice-pounding tool in Javanese culture, symbolizing hard work and togetherness. We embrace this philosophy in every aspect of our café, from food to service.
+    </p>
+    <br />
+    <p style="max-width: 800px; margin: auto; font-size: 1.1rem;">
+      Our signature dishes like Sego Sambel Lesung, traditional brewed coffee, and local side dishes are more than food—they’re stories from the family kitchen passed down through generations.
+    </p>
+    <br />
+    <p style="max-width: 800px; margin: auto; font-size: 1.1rem;">
+      Through this platform, we hope Lesung Café becomes known not just as a dining spot, but as a representation of Indonesia’s culinary heritage.
+    </p>
+  </section>
+
+  <footer><p>&copy; 2025 Lesung Cafe. All rights reserved.</p></footer>
+  <script>feather.replace();</script>
+  <script>
+    document.querySelector('#hamburger-menu').addEventListener('click', () => {
+      document.querySelector('#navbar-nav').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
