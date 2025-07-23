@@ -1,22 +1,17 @@
-// Toggle class active
 const navbarNav = document.querySelector('.navbar-nav');
+const hamburgerMenu = document.querySelector('#hamburger-menu');
 
-// Tombol menu diklik
-document.querySelector('#menu').onclick = () => {
+// Tombol hamburger diklik
+hamburgerMenu.onclick = () => {
   navbarNav.classList.toggle('active');
-};
-
-console.log("Script aktif!");
-
-document.querySelector('#menu').onclick = () => {
   console.log("Menu diklik!");
-  document.querySelector('.navbar-nav').classList.toggle('active');
 };
 
 // Klik di luar sidebar untuk menghilangkan nav
-const menu = document.querySelector ('#menu');
 document.addEventListener('click', function(e) {
-    if(!menu.contains(e.target)  && !navbarNav.contains(e.target)){
-        navbarNav.classList.remove('active');
-    }
-})
+  if (!hamburgerMenu.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove('active');
+  }
+});
+
+console.log("Script aktif!");

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -50,3 +51,57 @@
   </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Lesung Café</title>
+  <meta name="description" content="Menu pilihan terbaik dari Lesung Café Kepanjen.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo">Lesung<span>Cafe</span></a>
+    <div class="navbar-nav" id="navbar-nav">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="menu.html">Menu</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="artikel.html">Artikel</a>
+    </div>
+    <div class="navbar-extra">
+      <a href="menu-en.html" id="translate-button" title="English Version"><i data-feather="globe"></i></a>
+      <a href="#" id="search"><i data-feather="search"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+  
+  <!-- Gambar Menu -->
+  <section class="menu-image-only" style="margin-top: 6rem; text-align: center;">
+    <img src="https://i.imgur.com/nGc1B6B.jpg" alt="Menu Lesung Cafe" style="max-width: 100%; height: auto; border-radius: 10px;" />
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lesung Cafe. All rights reserved.</p>
+  </footer>
+
+  <!-- Feather Icons & Script -->
+  <script>
+    feather.replace();
+    const hamburger = document.querySelector('#hamburger-menu');
+    const navMenu = document.querySelector('#navbar-nav');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+>>>>>>> 1bf066550c5e9d53fcd2270ca96fe08722ebef96
