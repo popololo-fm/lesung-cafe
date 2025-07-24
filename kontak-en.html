@@ -33,11 +33,12 @@
   <section class="contact" style="margin-top: 6rem;">
     <h2>Contact & Reservation</h2>
     <p>Reach out to us for any inquiries or to book a table.</p>
-    <form action="#" method="post">
-      <input type="text" name="fullname" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <textarea name="message" rows="5" placeholder="Your message or request..."></textarea>
+    <form action="https://formsubmit.co/hafezallutfarokh3@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="Fullname" placeholder="Full Name" required />
+      <input type="email" name="Email" placeholder="Email Address" required />
+      <input type="tel" name="Phone" placeholder="Phone Number" required />
+      <textarea name="Message" rows="5" placeholder="Your message or request..."></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
@@ -48,12 +49,8 @@
     <p>Lesung Café is located in Kepanjen, Malang — easily accessible and perfect for family or group dining.</p>
     <div class="map-container">
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15825.206611501456!2d112.5763172!3d-8.1563334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMDknMjIuOCJTIDExMsKwMzQnMzQuNyJF!5e0!3m2!1sen!2sid!4v1721722000000!5m2!1sen!2sid" 
-        width="100%" 
-        height="350" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15825.206611501456!2d112.5763172!3d-8.1563334" 
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         title="Lesung Café Map Location">
       </iframe>
@@ -71,3 +68,6 @@
     document.querySelector('#hamburger-menu').addEventListener('click', () => {
       document.querySelector('#navbar-nav').classList.toggle('active');
     });
+  </script>
+</body>
+</html>
