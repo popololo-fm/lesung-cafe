@@ -11,8 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
-<body>
-  <body class="menu-en">
+<body class="menu-en">
   <!-- Navbar -->
   <nav class="navbar">
     <a href="index-en.html" class="navbar-logo">Lesung<span>Cafe</span></a>
@@ -30,22 +29,22 @@
     </div>
   </nav>
 
-  <!-- Search Bar (hidden by default) -->
+  <!-- Search Bar -->
   <div id="search-bar" style="display:none; position:fixed; top:80px; right:20px; background:#fff; padding:10px; border-radius:8px; z-index:9999; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
     <input type="text" placeholder="Search menu..." style="padding:6px; width:200px;" />
   </div>
 
-  <!-- Menu and Article Section (EN) -->
-<section class="menu-article-flex" style="margin-top: 100px;">
-  <!-- Menu Image -->
-  <div class="menu-container">
-    <img 
-      src="https://i.imgur.com/QqhLUe4.jpg" 
-      alt="Lesung Cafe Full Menu" 
-      title="Lesung Cafe Full Menu"
-      style="max-width: 100%; height: auto; border-radius: 10px;" 
-    />
-  </div>
+  <!-- Menu Section with Image -->
+  <section class="menu-article-flex" style="margin-top: 100px;">
+    <div class="menu-image-only">
+      <img 
+        src="https://i.imgur.com/QqhLUe4.jpg" 
+        alt="Lesung Cafe Full Menu" 
+        title="Lesung Cafe Full Menu"
+        style="width: 100%; height: auto; border-radius: 10px;" 
+      />
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
@@ -55,16 +54,19 @@
   <!-- Scripts -->
   <script>
     feather.replace();
+
     const hamburger = document.querySelector('#hamburger-menu');
     const navMenu = document.querySelector('#navbar-nav');
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
 
-    // Search icon click
     const searchIcon = document.querySelector('#search');
     const searchBar = document.getElementById('search-bar');
     searchIcon.addEventListener('click', (e) => {
       e.preventDefault();
       searchBar.style.display = searchBar.style.display === 'none' ? 'block' : 'none';
     });
+  </script>
+</body>
+</html>
