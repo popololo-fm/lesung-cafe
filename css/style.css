@@ -143,29 +143,10 @@ body {
   background: #6ddf5b;
 }
 
-/* About Section */
-.about {
-  padding: 5rem 10%;
-  background-color: #fff;
-  color: var(--dark);
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.about p {
-  max-width: 600px;
-  margin: auto;
-  font-size: 1.1rem;
-}
-
 /* Menu Section */
 .menu {
   padding: 5rem 10%;
-  background-color: #f4f4f4;
+  background-color: #fffef6;
   color: var(--dark);
   text-align: center;
 }
@@ -173,6 +154,7 @@ body {
 .menu h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: var(--primary);
 }
 
 .menu-list {
@@ -180,6 +162,7 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .menu-item {
@@ -188,10 +171,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   width: 250px;
+  border: 1px solid #ccc;
 }
 
 .menu-item h3 {
-  color: var(--primary);
+  color: #333;
   margin-bottom: 0.5rem;
 }
 
@@ -204,62 +188,12 @@ body {
   height: auto;
   display: block;
   border-radius: 10px;
-}
-
-/* Menu + Article Section (Flex Layout) */
-.menu-article-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem 10%;
-  background-color: #f4f4f4;
-  flex-wrap: wrap;
-}
-
-.menu-container {
-  flex: 1;
-  min-width: 300px;
-}
-
-.article-container {
-  flex: 1;
-  min-width: 300px;
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  color: #222;
-}
-
-/* English Menu Custom Style */
-body.menu-en .menu {
-  background-color: #fffef6;
-}
-
-body.menu-en .menu-item {
-  border: 1px solid #ccc;
-}
-
-body.menu-en .menu-item h3 {
-  color: #333;
-}
-
-body.menu-en .menu h2 {
-  color: var(--primary);
-}
-
-body.menu-en .menu-image-only img {
   border: 2px solid #ddd;
   transition: transform 0.3s;
 }
 
-body.menu-en .menu-image-only img:hover {
+.menu-image-only img:hover {
   transform: scale(1.05);
-}
-
-body.menu-en .menu-list {
-  flex-direction: row-reverse;
 }
 
 /* Contact Section */
@@ -392,13 +326,9 @@ footer {
     font-size: 2rem;
   }
 
-  .menu-article-flex {
+  .menu-list {
     flex-direction: column;
-    padding: 2rem 5%;
-  }
-
-  .article-container {
-    margin-top: 2rem;
+    align-items: center;
   }
 
   .hero .content h1 {
@@ -423,9 +353,4 @@ footer {
 
 @media (max-width: 540px) {
   html { font-size: 55%; }
-
-  .menu-list {
-    flex-direction: column;
-    align-items: center;
-  }
 }
