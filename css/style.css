@@ -206,6 +206,32 @@ body {
   border-radius: 10px;
 }
 
+/* Menu + Article Section (Flex Layout) */
+.menu-article-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 10%;
+  background-color: #f4f4f4;
+  flex-wrap: wrap;
+}
+
+.menu-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.article-container {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #222;
+}
+
 /* Contact Section */
 .contact {
   padding: 5rem 10%;
